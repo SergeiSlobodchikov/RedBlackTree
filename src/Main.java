@@ -7,5 +7,13 @@ public class Main {
         tree.insert(15);
         tree.insert(5);
         tree.print();
+
+        System.out.println("Contains 20: " + tree.contains(20));
+        System.out.println("Contains 25: " + tree.contains(25));
+
+        System.out.println("Remove 15: " + tree.remove(15));
+        System.out.println("Remove 25: " + tree.remove(25));
+
+        tree.print();
     }
 }

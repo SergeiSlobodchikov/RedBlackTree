@@ -30,7 +30,7 @@
 - `print()` - метод для вывода дерева на экран.
 - `traverse(Node<T> node, List<List<PrintNode<T>>> levels, int level)` - рекурсивный метод для обхода дерева и формирования списка у
 
-злов для вывода.
+ровней для вывода.
 
 ## Пример использования
 
@@ -44,8 +44,16 @@ public class Main {
         tree.insert(15);
         tree.insert(5);
         tree.print();
+        
+        System.out.println("Contains 20: " + tree.contains(20));
+        System.out.println("Contains 25: " + tree.contains(25));
+        
+        System.out.println("Remove 15: " + tree.remove(15));
+        System.out.println("Remove 25: " + tree.remove(25));
+        
+        tree.print();
     }
 }
 ```
 
-Этот пример создает красно-черное дерево, вставляет несколько элементов и выводит содержимое дерева на экран.
+В этом примере создается красно-черное дерево, вставляются несколько элементов и выводится содержимое дерева на экран. Затем выполняются проверки наличия и удаления элементов, и дерево снова выводится на экран.
